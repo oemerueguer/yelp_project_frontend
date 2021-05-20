@@ -33,14 +33,12 @@ const Header = () => {
                 <a href={`/header`}><img src={mainlogo} /></a>
               {/* Search bar goes here !!! */}
              <div className="searchBar">
-                 <div className="">
                  <button className="btn1" href={`/restaurants/${restaurantName}`}>Find</button>
                  <input type="text" className="inputOne" placeholder="Restaurants" onchange={(e) => setRestaurantName(e.target.value)}/>
-                </div>
-                <div className="">
+              
                  <button className="btn2" href={`/header/${cityName}`}>Where</button>
                  <input type="text" className="inputTwo" placeholder="Berlin" onchange={(e) => setCityName(e.target.value)}/>
-                </div>
+  
                  <button className="btn3"><i class="fas fa-search"></i></button>
              </div>
             </div>

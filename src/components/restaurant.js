@@ -3,6 +3,7 @@ import Axios from "axios";
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import RestaurantPicture from "../images/yelp.png";
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 
 const Restaurants = () => {
