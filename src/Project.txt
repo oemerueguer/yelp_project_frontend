@@ -1,0 +1,18 @@
+Steps for Yelp Project Frontend:
+
+1.install 
+    -react (DONE)
+    -reactDom (DONE)
+    -axios (DONE) 
+    -leaflet ()
+
+2. Components: 
+  np
+     -NavBar
+     -logo
+    -SearchBar [ two inputs 1- finde 2- wo 3-search button as icon] 
+    - icons and title
+    - api depend on the image [ one bg image in case no time!]
+    -another page with detailed info about the res and map
+    - all res and filters 
+3.
