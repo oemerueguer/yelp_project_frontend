@@ -23,7 +23,7 @@
     flex-wrap: wrap;
 }
 .searchBar input {
-    padding-right: 40px!important;
+    padding-right: 40px !important;
 }
 .searchBar input,
  .searchBar button {
