@@ -1,0 +1,14 @@
+.cardFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.restaurantPage {
+    margin-top: 5%;
+}
+.restPic {
+    width:100px;    
+}
+.restInfo{
+    display: block;
+    margin-left: 5%;
+}

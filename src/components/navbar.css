@@ -1,12 +1,22 @@
-
+.NavDesign {
+    margin-left: 15%;
+    margin-top: 3%;
+}
+.NavRegister {
+    margin-left: 20%;
+    margin-top: 3%;
+}
 .sign {
-    margin-right: 2%;
+    margin-right: 5%;
+    margin-top: 3%;
 }
 .register {
     padding: 10px 20px;
     border: 2px solid white;
     color: white !important;
     border-radius: 5px !important;
+    margin-right: 15%;
+    margin-top: 3%;
 }
 .register:hover {
     color: black !important;
@@ -14,16 +24,29 @@
 }
 .colored {
     color: white !important;
-    font-size: 16pt;
+    font-size: 12pt;
+    font-weight: bold;
 }
 .hoverEffect:hover {
     border-bottom: 2px solid white;
 }
 
-@media only screen and (max-width: 600px) {
-    .navMobile {
-        background-color: red;
-
+@media only screen and (max-width: 600px ) {
+    .NavDesign {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    .NavRegister {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    .sign {
+        margin-right: 2%;
+        margin-top: 0%;
+    }
+    .register {
+        margin-right: 0%;
+        margin-top: 0%;
     }
 
 } 

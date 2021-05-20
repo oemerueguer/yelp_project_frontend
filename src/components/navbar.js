@@ -23,22 +23,25 @@ const NavigationBar = (props) => {
   return (
     <>
       <div>
-      <Navbar  className="navMobile" color="dark" light expand="md">
+      <Navbar className="navMobile" color="transparent" light expand="md">
 {/*        <NavbarBrand href="/">Yelp!</NavbarBrand>} */}
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="mr-auto NavDesign" navbar>
+          <NavItem className="hoverEffect">
+              <NavLink className="colored" href="/header">Home</NavLink>
+            </NavItem>              
             <NavItem className="hoverEffect">
-              <NavLink className="colored" href="/components/">Write a Comment</NavLink>
+              <NavLink className="colored" href="#">Write a Comment</NavLink>
             </NavItem>
             <NavItem className="hoverEffect">
-              <NavLink className="colored" href="https://github.com/reactstrap/reactstrap">Events</NavLink>
+              <NavLink className="colored" href="#">Events</NavLink>
             </NavItem>
             <NavItem className="hoverEffect">
-              <NavLink className="colored" href="https://github.com/reactstrap/reactstrap">Forum</NavLink>
-            </NavItem>            
+              <NavLink className="colored" href="#">Forum</NavLink>
+            </NavItem>         
           </Nav>
-          <NavbarText className="sign colored hoverEffect">Sign In</NavbarText>
+          <NavbarText className="sign colored hoverEffect">Login</NavbarText>
           <NavbarText className="register">Register</NavbarText>
         </Collapse>
       </Navbar>
