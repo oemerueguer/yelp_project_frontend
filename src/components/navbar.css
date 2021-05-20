@@ -1,0 +1,29 @@
+
+.sign {
+    margin-right: 2%;
+}
+.register {
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white !important;
+    border-radius: 5px !important;
+}
+.register:hover {
+    color: black !important;
+    background-color: white;
+}
+.colored {
+    color: white !important;
+    font-size: 16pt;
+}
+.hoverEffect:hover {
+    border-bottom: 2px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+    .navMobile {
+        background-color: red;
+
+    }
+
+} 

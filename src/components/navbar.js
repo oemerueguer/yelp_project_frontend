@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./navbar.css";
 import {
   Collapse,
   Navbar,
@@ -20,40 +21,29 @@ const NavigationBar = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+    <>
+      <div>
+      <Navbar  className="navMobile" color="dark" light expand="md">
+{/*        <NavbarBrand href="/">Yelp!</NavbarBrand>} */}
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+            <NavItem className="hoverEffect">
+              <NavLink className="colored" href="/components/">Write a Comment</NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+            <NavItem className="hoverEffect">
+              <NavLink className="colored" href="https://github.com/reactstrap/reactstrap">Events</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem className="hoverEffect">
+              <NavLink className="colored" href="https://github.com/reactstrap/reactstrap">Forum</NavLink>
+            </NavItem>            
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText className="sign colored hoverEffect">Sign In</NavbarText>
+          <NavbarText className="register">Register</NavbarText>
         </Collapse>
       </Navbar>
     </div>
+    </>
   );
 }
 

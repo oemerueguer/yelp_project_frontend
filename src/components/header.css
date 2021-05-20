@@ -7,3 +7,35 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.Header_inside {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Header_inside img {
+    width: 100px;
+    margin: 20px 0px;
+}
+
+.searchBar {
+    display: flex;
+}
+.searchBar input {
+    padding-right: 40px!important;
+}
+.searchBar input,
+ .searchBar button {
+   height: 5vh;
+   padding: 4px 10px;
+   font-weight: bold;
+   background-color: white;
+   outline: none;
+   border: 1px solid white;
+}
+.btn3 {
+    background-color: #d32323 !important;
+    border: 1px solid #d32323 !important;
+    color: white !important;
+}

@@ -1,69 +1,11 @@
-import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
-
-const NavigationBar = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
-  return (
-    <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/components/">Components</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>Simple Text</NavbarText>
-        </Collapse>
-      </Navbar>
-    </div>
-  );
-}
-
-export default NavigationBar;<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <script src="https://kit.fontawesome.com/daf228d976.js" crossorigin="anonymous"></script>
     <meta
       name="description"
       content="User Reviews and Recommendations of Best Restaurants, Shopping, Nightlife, Food, Entertainment, Things to Do, Services and More at Yelp."
@@ -99,7 +41,9 @@ export default NavigationBar;<!DOCTYPE html>
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>  <script   src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"   crossorigin></script>  <script   src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"   crossorigin></script>
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>  
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"   crossorigin></script>  
+    <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"   crossorigin></script>
 
   </body>
 </html>
