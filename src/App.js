@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/header';
 import Restaurants from './components/restaurant';
-import Footer from './components/footer';
+
 
 
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Restaurants />
-      <Footer />
+      
     </div>
   );
 }

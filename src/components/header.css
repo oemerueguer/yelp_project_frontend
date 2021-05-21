@@ -39,3 +39,20 @@
     border: 1px solid #d32323 !important;
     color: white !important;
 }
+
+
+@media only screen and (max-width : 600px) {
+    .searchBar {
+        width: 100%;
+        text-align: center !important;
+        margin-left: 10%;
+    }
+    #bbt{
+       
+        display: block !important;
+       
+    }
+    .Header {
+        height: 100vh;
+    }
+}

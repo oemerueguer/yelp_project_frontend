@@ -31,6 +31,16 @@ const Header = () => {
   console.log(restaurantName)
   console.log(cityName)
 
+  useEffect(() => {
+    fetchCities();
+  })
+
+  const fetchCities = async() => {
+    await Axios.get(`https://yelp-backend546.herokuapp.com/cities`)
+    .then((response) => setCityName(response.data))
+    .catch((error) => console.log(error)); 
+  }
+
   return (
     <>
       <div className="Header" style={{backgroundImage: `url(${yelpPicture})`}}>
@@ -51,8 +61,8 @@ const Header = () => {
                 placeholder="Restaurants"
                 onChange={(e) => setRestaurantName(e.target.value)}
               />
-
-              <button className="btn2" href={`/header/${cityName}`}>
+            
+              <button id="bbt"  className="btn2" href={`/header/${cityName}`}>
                 Where
               </button>
               <input

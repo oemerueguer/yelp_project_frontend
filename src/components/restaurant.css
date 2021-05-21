@@ -21,3 +21,17 @@
     box-shadow: 30px 0px 45px 0px rgba(233, 225, 225, 0.8);
     cursor: pointer;
 }
+.desc {
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+
+.btnMore {
+    padding: 10px 20px;
+    border-radius: 2px;
+    background-color: #d32323;
+    color: white;
+    border: 1px solid #d32323;
+    outline: none;
+}

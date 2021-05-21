@@ -9,6 +9,7 @@
 .sign {
   margin-right: 5%;
   margin-top: 3%;
+  cursor: pointer;
 }
 .register {
   padding: 10px 20px;
@@ -17,10 +18,12 @@
   border-radius: 5px !important;
   margin-right: 15%;
   margin-top: 3%;
+  cursor: pointer;
 }
 .register:hover {
   color: black !important;
   background-color: white;
+  cursor: pointer;
 }
 .colored {
   color: white !important;
@@ -29,12 +32,39 @@
 }
 .hoverEffect:hover {
   border-bottom: 2px solid white;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 600px) {
+  /* Styles */
   .navMobile {
-    background-color: white;
+    background-color: white !important;
+    text-align: center !important;
+    width: 100%;
   }
+  .register, .NavDesign, .colored {
+    color: black!important;
+    display: block!important;
+    text-align: center !important;
+    width: 100%;
+    margin-left: 0;
+  }
+  .register{
+      border: 2px solid black;
+  }
+  .register:hover {
+      background-color: black;
+      color: white !important;
+  }
+  .hoverEffect:hover {
+      border-bottom: 2px solid black;
+  }
+  }
+/* 
+@media  (max-width: 600px) {
+  
   .NavDesign {
     margin-left: 0%;
     margin-top: 0%;
@@ -51,4 +81,4 @@
     margin-right: 0%;
     margin-top: 0%;
   }
-}
+} */

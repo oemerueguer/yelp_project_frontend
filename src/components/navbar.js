@@ -23,7 +23,7 @@ const NavigationBar = (props) => {
   return (
     <>
       <div>
-      <Navbar className="navMobile" color="transparent" light expand="md">
+      <Navbar className="navMobile"  light expand="md">
 {/*        <NavbarBrand href="/">Yelp!</NavbarBrand>} */}
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
