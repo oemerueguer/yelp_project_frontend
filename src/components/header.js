@@ -3,6 +3,7 @@ import mainlogo from "../images/yelp.png";
 import NavigationBar from "./navbar";
 import { useState, useEffect } from "react";
 import Axios from "axios";
+import Footer from "./footer";
 
 const Header = () => {
     const [headerPicture, setHeaderPicture] = useState();
@@ -14,7 +15,7 @@ const Header = () => {
     }, [])
 
     const fetchHeaderPicture = async () => {
-       {/* const randomNumber = Math.floor(Math.random() * 5); */}
+       {/* const randomNumber = Math.floor(Math.random() * 5 + 1); */}
        await Axios.get("https://api.yelp.com/v3/businesses/")
           .then((response) =>
             console.log(response)
@@ -43,6 +44,7 @@ const Header = () => {
              </div>
             </div>
          </div>
+         <Footer />
          </div>
         </>
     )}
