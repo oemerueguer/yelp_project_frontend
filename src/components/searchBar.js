@@ -14,7 +14,7 @@ const SearchBar = (props) => {
         <input type="text" placeholder="find restaurants here..." />
 
         <button href={`/header/${cityName}`}>Where</button>
-        <input type="text" placeholder="Berlin" className="mr-sm-2" onchange={(e) => setCityName(e.target.value)} />
+        <input type="text" placeholder="Berlin" className="mr-sm-2" onChange={(e) => setCityName(e.target.value)} />
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 .Header {
     height: 90vh;
-    background-image: url("../images/bg.jpeg");
+   /*background-image: url("../images/bg.jpeg"); */
     background-color: rgba(0, 0, 0, .3);
     background-blend-mode: multiply;
     background-position: center;

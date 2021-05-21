@@ -1,31 +1,43 @@
 import "./restaurant.css";
 import Axios from "axios";
+import {useState, useEffect} from "react";
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import RestaurantPicture from "../images/yelp.png";
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
-
+const url = "https://yelp-backend546.herokuapp.com/restaurants"
 const Restaurants = () => {
+  const [data, setData] = useState([]);
+  const [loader, setLoader] = useState(false);
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async() => {
+    setLoader(true);
+    await Axios.get(url)
+    .then((response) => setData(response.data))
+    .catch((error) => console.log(error));
+    setLoader(false)
+  }
+  console.log(data)
   return (
     <>
-      <Container className="restaurantPage">
-        <Row>
-          <Col xs="6" sm="8">
+      {loader ? "loading!" :  
           <div className="cardFlex">   
-             <img className="restPic" src={RestaurantPicture}/>
-             <div className="restInfo"> 
-             <h2>Pizzeria Name</h2>
-             <p>Rating comes here</p>
-             <p>Euro sign - FoodName and NationName</p>
+             <div className="restInfo">             
+              {data.map((e, index) => (
+                <>
+                 <div className="insideCard">
+                  <h3>{e.name}</h3>
+                  <p>{e.city_id.name}</p>
+                 </div>
+                </>
+              ))}
             </div>
-          </div>  
-          </Col>
-          <Col xs="6" sm="4">
-            .col-6 .col-sm-4
-          </Col>
-        </Row>
-      </Container>
+          </div>     
+    }   
     </>
   );
 };
